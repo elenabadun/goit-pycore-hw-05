@@ -8,7 +8,6 @@ def generator_numbers(text: str):
     numbers = re.findall(pattern, text)
     for num in numbers:
         yield float(num)
-        print(float(num))
 
 
 def sum_profit(text: str, func: Callable):
